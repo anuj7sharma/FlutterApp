@@ -23,6 +23,7 @@ class _ListScreenState extends State<ResturantListScreen> {
       Uri.encodeFull(url),
       headers: {"Accept": "application/json"},
     );
+    if(this.mounted)
     setState(() {
       var resBody = json.decode(res.body);
       data = resBody['results'];

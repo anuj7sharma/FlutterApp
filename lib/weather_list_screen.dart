@@ -37,7 +37,9 @@ class _WeatherListScreenState extends State<WeatherListScreen> {
         elevation: 6.0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
         child: InkWell(
-          onTap: () {},
+          onTap: () {
+            Navigator.of(context).pushNamed('/weather_detail');
+          },
           highlightColor: Colors.lightGreen,
           child: Stack(
             children: <Widget>[

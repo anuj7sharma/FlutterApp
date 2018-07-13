@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/resturant_detail_screen.dart';
 import 'package:flutter_app/resturent_list_screen.dart';
+import 'package:flutter_app/weather_detail_screen.dart';
 import 'package:flutter_app/weather_list_screen.dart';
 
 void main() => runApp(new MyApp());
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
       home: new MyHomePage(title: 'First Flutter'),
       routes: <String, WidgetBuilder>{
         '/restaurant_list': (BuildContext context) => new ResturantListScreen(),
-        '/restaurant_detail': (BuildContext context) => new ResturantDetailScreen()
+        '/restaurant_detail': (BuildContext context) => new ResturantDetailScreen(),
+        '/weather_detail':(BuildContext context)=> WeatherDetailScreen(),
       },
     );
   }
